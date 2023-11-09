@@ -1,0 +1,87 @@
+object frmPrincipal: TfrmPrincipal
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 527
+  ClientWidth = 385
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 3
+  object btnImpresion: TButton
+    Align = Bottom
+    StyledSettings = [Family, FontColor]
+    Position.Y = 447.000000000000000000
+    Size.Width = 385.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'Prueba de impresi'#243'n'
+    TextSettings.Font.Size = 14.000000000000000000
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+    OnClick = btnImpresionClick
+  end
+  object btnBarcodeScanner: TButton
+    Align = Bottom
+    StyledSettings = [Family, FontColor]
+    Position.Y = 487.000000000000000000
+    Size.Width = 385.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = 'Probar esc'#225'ner c'#243'digos de barras'
+    TextSettings.Font.Size = 14.000000000000000000
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+    OnClick = btnBarcodeScannerClick
+  end
+  object lblTituloPruebas: TLabel
+    Align = Top
+    StyledSettings = [Family, FontColor]
+    Margins.Top = 15.000000000000000000
+    Position.Y = 15.000000000000000000
+    Size.Width = 385.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 20.000000000000000000
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+    TextSettings.HorzAlign = Center
+    Text = 'Pruebas en Urovo i9000S'
+    TabOrder = 2
+  end
+  object lblResultadoPruebas: TLabel
+    Align = Client
+    StyledSettings = [Family, FontColor]
+    Size.Width = 385.000000000000000000
+    Size.Height = 355.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 16.000000000000000000
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+    TextSettings.HorzAlign = Center
+    Text = ':)'
+    TabOrder = 4
+  end
+  object edtCodigo: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    Align = Top
+    StyleLookup = 'editstyle'
+    TabOrder = 3
+    Password = True
+    TextSettings.Font.Size = 14.000000000000000000
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+    TextSettings.HorzAlign = Center
+    Position.X = 10.000000000000000000
+    Position.Y = 60.000000000000000000
+    Margins.Left = 10.000000000000000000
+    Margins.Top = 15.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Size.Width = 365.000000000000000000
+    Size.Height = 32.000000000000000000
+    Size.PlatformDefault = False
+    TextPrompt = 'Resultado de escaneo'
+    StyledSettings = [Family, FontColor]
+    KillFocusByReturn = True
+    OnExit = edtCodigoExit
+  end
+end

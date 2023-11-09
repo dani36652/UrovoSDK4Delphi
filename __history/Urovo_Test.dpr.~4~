@@ -1,0 +1,17 @@
+program Urovo_Test;
+
+uses
+  System.StartUpCopy,
+  FMX.Forms,
+  Skia.FMX,
+  UPrincipal in 'UPrincipal.pas' {frmPrincipal},
+  UImpresion in 'UImpresion.pas';
+
+{$R *.res}
+
+begin
+  GlobalUseSkia := True;
+  Application.Initialize;
+  Application.CreateForm(TfrmPrincipal, frmPrincipal);
+  Application.Run;
+end.
